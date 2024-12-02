@@ -12,7 +12,7 @@ let FlyingSaucer = document.querySelector('.FlyingSaucer');
 
 FlyingSaucer.style.display ="none";
 
-left.addEventListener('click', function() {
+left.addEventListener('click', function() -+{
     console.log("clicked left");
     leftRight.style.display ="none";
     left.style.display ="none";
