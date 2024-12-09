@@ -16,9 +16,23 @@ right2.style.display = "none";
 FlyingSaucer.style.display ="none";
 let Aliendead = document.querySelector('.Aliendead');
 Aliendead.style.display ="none";
+let Escape = document.querySelector('.Escape');
+Escape.style.display ="none";
 
 
-left.addEventListener('click', function(){
+Alien.addEventListener('dblclick', function() {
+    console.log("Adead dbl clicked");
+    Yeti.style.display = "none";
+   dead.style.display = "none";
+     left2.style.display = "none";
+     right2.style.display = "none";
+     Alien.style.display ="none";
+     Aliendead.style.display ="block";
+ text.innerHTML ="light work";
+
+});
+
+left.addEventListener('click', function() {
     console.log("clicked left");
     leftRight.style.display ="none";
     left.style.display ="none";
@@ -29,10 +43,10 @@ left.addEventListener('click', function(){
     right2.style.display = "none";
     Aliendead.style.display ="none";
 text.innerHTML ="Double click to fight";
-
 });
 
-right.addEventListener('click', function(){
+
+right.addEventListener('click', function() {
     console.log("right clicked")
     leftRight.style.display ="none";
     left.style.display ="none";
@@ -45,11 +59,6 @@ right.addEventListener('click', function(){
     Aliendead.style.display ="none";
 });
 
-Yeti.addEventListener('dblclick', function() {
-
-    text.innerHTML ="That was easy";
-
-});
 
 Yeti.addEventListener('dblclick', function() {
     console.log("Yeti dbl clicked")
@@ -61,8 +70,9 @@ Yeti.addEventListener('dblclick', function() {
     Aliendead.style.display ="none";
 });
 
-FlyingSaucer.addEventListener('mouseenter',function(){
-    console.log("Flying Saucer hovered")
+
+FlyingSaucer.addEventListener('mouseenter',function() {
+console.log("Flying Saucer hovered");
 Alien.style.display ="block";
 text.innerHTML="Welcome Human, Choose your fate";
 Yeti.style.display ="none";
@@ -71,7 +81,8 @@ right2.style.display ="block";
 Aliendead.style.display ="none";
 });
 
-left2.addEventListener('click', function(){
+
+left2.addEventListener('click', function() {
     console.log("clicked left");
     leftRight.style.display ="none";
     left.style.display ="none";
@@ -80,20 +91,23 @@ left2.addEventListener('click', function(){
     Yeti.style.display = "none";
     left2.style.display = "none";
     right2.style.display = "none";
-    Alien.style.display ="none";
-    Aliendead.style.display ="block";
+    Alien.style.display ="block";
+    Aliendead.style.display ="none";
+    FlyingSaucer.style.display ="none";
 text.innerHTML ="Double click to fight";
 });
 
-Aliendead.addEventListener('dbl click', function(){
-    console.log("Adead dbl clicked")
-    Yeti.style.display = "none";
-    dead.style.display = "none";
+
+right2.addEventListener('click', function(){
+    console.log("clicked right");
+    Escape.style.display ="block";
+    Alien.style.display ="none";
     left2.style.display = "none";
     right2.style.display = "none";
-    Alien.style.display ="none";
-    Aliendead.style.display ="block";
-    text.innerHTML ="light work";
-
+    FlyingSaucer.style.display ="none";
+text.innerHTML = "you have escaped";
 });
+
+
+
 
