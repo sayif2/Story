@@ -18,17 +18,20 @@ let Aliendead = document.querySelector('.Aliendead');
 Aliendead.style.display ="none";
 let Escape = document.querySelector('.Escape');
 Escape.style.display ="none";
-
+let Died = document.querySelector('.Died');
+Died.style.display ="none";
+Died.style.width = "125%";
 
 Alien.addEventListener('dblclick', function() {
     console.log("Adead dbl clicked");
     Yeti.style.display = "none";
-   dead.style.display = "none";
-     left2.style.display = "none";
-     right2.style.display = "none";
-     Alien.style.display ="none";
-     Aliendead.style.display ="block";
- text.innerHTML ="light work";
+    dead.style.display = "none";
+    left2.style.display = "none";
+    right2.style.display = "none";
+    Alien.style.display ="none";
+    Aliendead.style.display ="none";
+    Died.style.display = "block"
+ text.innerHTML ="YOU DIED";
 
 });
 
@@ -42,7 +45,7 @@ left.addEventListener('click', function() {
     left2.style.display = "none";
     right2.style.display = "none";
     Aliendead.style.display ="none";
-text.innerHTML ="Double click to fight";
+text.innerHTML ="A Yeti! Double click to fight";
 });
 
 
@@ -53,7 +56,7 @@ right.addEventListener('click', function() {
     right.style.display ="none";
     Alien.style.display = "block";
     FlyingSaucer.style.display ="block";
-    text.innerHTML ="You encounter an Alien";
+    text.innerHTML ="You encounter an Alien, you run to its Ufo";
     left2.style.display = "none";
     right2.style.display = "none";
     Aliendead.style.display ="none";
@@ -72,13 +75,13 @@ Yeti.addEventListener('dblclick', function() {
 
 
 FlyingSaucer.addEventListener('mouseenter',function() {
-console.log("Flying Saucer hovered");
-Alien.style.display ="block";
-text.innerHTML="Welcome Human, Choose your fate";
-Yeti.style.display ="none";
-left2.style.display ="block";
-right2.style.display ="block";
-Aliendead.style.display ="none";
+    console.log("Flying Saucer hovered");
+    Alien.style.display ="block";
+    text.innerHTML="Welcome Human, Choose your fate";
+    Yeti.style.display ="none";
+    left2.style.display ="block";
+    right2.style.display ="block";
+    Aliendead.style.display ="none";
 });
 
 
@@ -98,14 +101,14 @@ text.innerHTML ="Double click to fight";
 });
 
 
-right2.addEventListener('click', function(){
+right2.addEventListener('click', function() {
     console.log("clicked right");
     Escape.style.display ="block";
     Alien.style.display ="none";
     left2.style.display = "none";
     right2.style.display = "none";
     FlyingSaucer.style.display ="none";
-text.innerHTML = "you have escaped";
+text.innerHTML = "You ran and escaped the ship";
 });
 
 
